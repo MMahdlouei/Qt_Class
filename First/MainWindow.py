@@ -17,27 +17,25 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.setWindowModality(Qt.WindowModal)
-        MainWindow.resize(284, 276)
+        MainWindow.resize(562, 443)
+        MainWindow.setCursor(QCursor(Qt.CrossCursor))
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.pushButton = QPushButton(self.centralwidget)
         self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setGeometry(QRect(10, 160, 231, 41))
+        self.pushButton.setGeometry(QRect(70, 250, 461, 151))
         font = QFont()
-        font.setPointSize(24)
-        font.setBold(True)
-        font.setWeight(75)
+        font.setPointSize(36)
         self.pushButton.setFont(font)
         self.label = QLabel(self.centralwidget)
         self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(20, 10, 251, 141))
+        self.label.setGeometry(QRect(0, 10, 521, 201))
         self.label.setFont(font)
         self.label.setAlignment(Qt.AlignCenter)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 284, 21))
+        self.menubar.setGeometry(QRect(0, 0, 562, 26))
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
@@ -50,7 +48,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Click Here!", None))
-        self.label.setText(QCoreApplication.translate("MainWindow", u"Hello World!", None))
+        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
+        self.label.setText(QCoreApplication.translate("MainWindow", u"Majid", None))
     # retranslateUi
 
