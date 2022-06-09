@@ -13,7 +13,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
 
     def press(self):
-        self.label.setText(self.ui.label.text() + " new text ")
+        self.label.setText(self.label.text() + " new text ")
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
