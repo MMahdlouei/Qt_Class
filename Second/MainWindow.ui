@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QWidget" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>610</width>
+    <height>740</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(221, 233, 255);</string>
+  </property>
+  <widget class="QPushButton" name="btn7">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>140</y>
+     <width>140</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/7.png</normaloff>Images/7.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>140</width>
+     <height>140</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>290</y>
+     <width>140</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/4.png</normaloff>Images/4.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>140</width>
+     <height>140</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>440</y>
+     <width>140</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>590</y>
+     <width>140</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>440</y>
+     <width>140</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/1.png</normaloff>Images/1.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>140</width>
+     <height>140</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn0">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>590</y>
+     <width>140</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/0.png</normaloff>Images/0.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>140</width>
+     <height>140</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn8">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>140</y>
+     <width>140</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/8.png</normaloff>Images/8.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>140</width>
+     <height>140</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn2">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>440</y>
+     <width>140</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/2.png</normaloff>Images/2.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>140</width>
+     <height>140</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btndot">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>590</y>
+     <width>140</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/dot.png</normaloff>Images/dot.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>140</width>
+     <height>140</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn5">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>290</y>
+     <width>140</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>48</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/5.png</normaloff>Images/5.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>140</width>
+     <height>140</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btndevide">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>290</y>
+     <width>140</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/dev.png</normaloff>Images/dev.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>140</width>
+     <height>140</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_12">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>440</y>
+     <width>140</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnminus">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>590</y>
+     <width>140</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/min.png</normaloff>Images/min.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>140</width>
+     <height>140</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_14">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>590</y>
+     <width>140</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnplus">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>440</y>
+     <width>140</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/plus.png</normaloff>Images/plus.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>140</width>
+     <height>140</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnmulti">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>140</y>
+     <width>140</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/mul.png</normaloff>Images/mul.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>140</width>
+     <height>140</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn9">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>140</y>
+     <width>140</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/9.png</normaloff>Images/9.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>140</width>
+     <height>140</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn6">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>290</y>
+     <width>140</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/6.png</normaloff>Images/6.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>140</width>
+     <height>140</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn3">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>440</y>
+     <width>140</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/3.png</normaloff>Images/3.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>140</width>
+     <height>140</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnequal">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>590</y>
+     <width>140</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Images/eq.png</normaloff>Images/eq.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>140</width>
+     <height>140</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>591</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Digital-7</family>
+     <pointsize>72</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(55, 255, 242);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>4</number>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>btn5</zorder>
+  <zorder>btn7</zorder>
+  <zorder>btn4</zorder>
+  <zorder>pushButton_3</zorder>
+  <zorder>pushButton_4</zorder>
+  <zorder>btn1</zorder>
+  <zorder>btn0</zorder>
+  <zorder>btn8</zorder>
+  <zorder>btn2</zorder>
+  <zorder>btndot</zorder>
+  <zorder>btndevide</zorder>
+  <zorder>pushButton_12</zorder>
+  <zorder>btnminus</zorder>
+  <zorder>pushButton_14</zorder>
+  <zorder>btnplus</zorder>
+  <zorder>btnmulti</zorder>
+  <zorder>btn9</zorder>
+  <zorder>btn6</zorder>
+  <zorder>btn3</zorder>
+  <zorder>btnequal</zorder>
+  <zorder>lbl</zorder>
+ </widget>
+ <resources>
+  <include location="MyResources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
