@@ -1,0 +1,136 @@
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'Setting.ui'
+##
+## Created by: Qt User Interface Compiler version 5.15.2
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
+
+from PySide2.QtCore import *
+from PySide2.QtGui import *
+from PySide2.QtWidgets import *
+
+
+class Ui_Setting(object):
+    def setupUi(self, Setting):
+        if not Setting.objectName():
+            Setting.setObjectName(u"Setting")
+        Setting.resize(285, 202)
+        Setting.setMinimumSize(QSize(285, 70))
+        Setting.setMaximumSize(QSize(2850, 700))
+        self.splitter_4 = QSplitter(Setting)
+        self.splitter_4.setObjectName(u"splitter_4")
+        self.splitter_4.setGeometry(QRect(9, 73, 71, 17))
+        self.splitter_4.setOrientation(Qt.Horizontal)
+        self.splitter_5 = QSplitter(Setting)
+        self.splitter_5.setObjectName(u"splitter_5")
+        self.splitter_5.setGeometry(QRect(9, 96, 71, 17))
+        self.splitter_5.setOrientation(Qt.Horizontal)
+        self.splitter_6 = QSplitter(Setting)
+        self.splitter_6.setObjectName(u"splitter_6")
+        self.splitter_6.setGeometry(QRect(10, 90, 261, 29))
+        self.splitter_6.setOrientation(Qt.Horizontal)
+        self.label_3 = QLabel(self.splitter_6)
+        self.label_3.setObjectName(u"label_3")
+        self.label_3.setMinimumSize(QSize(45, 0))
+        self.label_3.setStyleSheet(u"font: 75 16pt \"Comic Sans MS\";")
+        self.splitter_6.addWidget(self.label_3)
+        self.scrGreen = QScrollBar(self.splitter_6)
+        self.scrGreen.setObjectName(u"scrGreen")
+        self.scrGreen.setMinimumSize(QSize(215, 0))
+        self.scrGreen.setMaximumSize(QSize(215, 16777215))
+        self.scrGreen.setStyleSheet(u"background-color:green;")
+        self.scrGreen.setMaximum(255)
+        self.scrGreen.setOrientation(Qt.Horizontal)
+        self.splitter_6.addWidget(self.scrGreen)
+        self.splitter_7 = QSplitter(Setting)
+        self.splitter_7.setObjectName(u"splitter_7")
+        self.splitter_7.setGeometry(QRect(10, 130, 261, 29))
+        self.splitter_7.setOrientation(Qt.Horizontal)
+        self.label_4 = QLabel(self.splitter_7)
+        self.label_4.setObjectName(u"label_4")
+        self.label_4.setMinimumSize(QSize(45, 0))
+        self.label_4.setStyleSheet(u"font: 75 16pt \"Comic Sans MS\";")
+        self.splitter_7.addWidget(self.label_4)
+        self.scrBlue = QScrollBar(self.splitter_7)
+        self.scrBlue.setObjectName(u"scrBlue")
+        self.scrBlue.setMinimumSize(QSize(215, 0))
+        self.scrBlue.setMaximumSize(QSize(215, 16777215))
+        self.scrBlue.setStyleSheet(u"background-color: Blue;")
+        self.scrBlue.setMaximum(255)
+        self.scrBlue.setOrientation(Qt.Horizontal)
+        self.splitter_7.addWidget(self.scrBlue)
+        self.splitter = QSplitter(Setting)
+        self.splitter.setObjectName(u"splitter")
+        self.splitter.setGeometry(QRect(9, 15, 267, 23))
+        self.splitter.setOrientation(Qt.Horizontal)
+        self.label = QLabel(self.splitter)
+        self.label.setObjectName(u"label")
+        self.label.setMinimumSize(QSize(181, 23))
+        self.label.setMaximumSize(QSize(181, 23))
+        self.label.setStyleSheet(u"font: 75 16pt \"Comic Sans MS\";")
+        self.splitter.addWidget(self.label)
+        self.comboBox = QComboBox(self.splitter)
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.setObjectName(u"comboBox")
+        self.comboBox.setMinimumSize(QSize(81, 23))
+        self.comboBox.setMaximumSize(QSize(131, 23))
+        self.comboBox.setStyleSheet(u"font: 75 16pt \"Comic Sans MS\";")
+        self.splitter.addWidget(self.comboBox)
+        self.splitter_2 = QSplitter(Setting)
+        self.splitter_2.setObjectName(u"splitter_2")
+        self.splitter_2.setGeometry(QRect(10, 170, 149, 23))
+        self.splitter_2.setOrientation(Qt.Horizontal)
+        self.btnOk = QPushButton(self.splitter_2)
+        self.btnOk.setObjectName(u"btnOk")
+        self.btnOk.setMinimumSize(QSize(72, 23))
+        self.btnOk.setMaximumSize(QSize(72, 23))
+        self.splitter_2.addWidget(self.btnOk)
+        self.btnCancel = QPushButton(self.splitter_2)
+        self.btnCancel.setObjectName(u"btnCancel")
+        self.btnCancel.setMinimumSize(QSize(72, 23))
+        self.btnCancel.setMaximumSize(QSize(72, 23))
+        self.splitter_2.addWidget(self.btnCancel)
+        self.splitter_3 = QSplitter(Setting)
+        self.splitter_3.setObjectName(u"splitter_3")
+        self.splitter_3.setGeometry(QRect(10, 50, 261, 29))
+        self.splitter_3.setOrientation(Qt.Horizontal)
+        self.label_2 = QLabel(self.splitter_3)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setMinimumSize(QSize(45, 0))
+        self.label_2.setStyleSheet(u"font: 75 16pt \"Comic Sans MS\";")
+        self.splitter_3.addWidget(self.label_2)
+        self.scrRed = QScrollBar(self.splitter_3)
+        self.scrRed.setObjectName(u"scrRed")
+        self.scrRed.setMinimumSize(QSize(215, 0))
+        self.scrRed.setMaximumSize(QSize(215, 16777215))
+        self.scrRed.setStyleSheet(u"background-color: rgb(255, 0, 4);")
+        self.scrRed.setMaximum(255)
+        self.scrRed.setOrientation(Qt.Horizontal)
+        self.splitter_3.addWidget(self.scrRed)
+
+        self.retranslateUi(Setting)
+
+        QMetaObject.connectSlotsByName(Setting)
+    # setupUi
+
+    def retranslateUi(self, Setting):
+        Setting.setWindowTitle(QCoreApplication.translate("Setting", u"Settings", None))
+        self.label_3.setText(QCoreApplication.translate("Setting", u"Green", None))
+        self.label_4.setText(QCoreApplication.translate("Setting", u"Blue", None))
+        self.label.setText(QCoreApplication.translate("Setting", u"BackGround Color", None))
+        self.comboBox.setItemText(0, QCoreApplication.translate("Setting", u"None", None))
+        self.comboBox.setItemText(1, QCoreApplication.translate("Setting", u"Red", None))
+        self.comboBox.setItemText(2, QCoreApplication.translate("Setting", u"Green", None))
+        self.comboBox.setItemText(3, QCoreApplication.translate("Setting", u"Blue", None))
+
+        self.btnOk.setText(QCoreApplication.translate("Setting", u"Ok", None))
+        self.btnCancel.setText(QCoreApplication.translate("Setting", u"Cancel", None))
+        self.label_2.setText(QCoreApplication.translate("Setting", u"Red", None))
+    # retranslateUi
+
