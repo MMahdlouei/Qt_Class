@@ -15,6 +15,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.DisEnable(False)
         self.btnConnect.clicked.connect(self.ConnectSerial)
         self.btnDisconnect.clicked.connect(self.DisconnectSerial)
+        self.lineEdit.setInputMask("0x-HH");
         #self.btnSend.clicked.connect(lambda : self.ser.write(self.Message)) u can use this instead of defining function
         self.btnSend.clicked.connect(self.SendSerial)
         Ports = serial.tools.list_ports.comports() # make a list from available COM ports. u should print this to see whole list

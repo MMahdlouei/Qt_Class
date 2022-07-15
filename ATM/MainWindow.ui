@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1377</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(94, 103, 103);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(94, 103, 103);</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>0</y>
+      <width>1191</width>
+      <height>771</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="MyResources.qrc">:/Images/Images/main0.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnl1">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>290</y>
+      <width>91</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	border-image: url(:/Images/Images/lsoftkey.png);
+	background-color: rgb(92, 101, 101);
+}
+QPushButton::hover
+{
+	border:5px;
+}
+QPushButton::pressed
+{
+	border:-5px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnl2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>430</y>
+      <width>91</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	border-image: url(:/Images/Images/lsoftkey.png);
+	background-color: rgb(92, 101, 101);
+}
+QPushButton::hover
+{
+	border:5px;
+}
+QPushButton::pressed
+{
+	border:-5px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnl3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>570</y>
+      <width>91</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	border-image: url(:/Images/Images/lsoftkey.png);
+	background-color: rgb(92, 101, 101);
+}
+QPushButton::hover
+{
+	border:5px;
+}
+QPushButton::pressed
+{
+	border:-5px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnl4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>680</y>
+      <width>91</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	border-image: url(:/Images/Images/lsoftkey.png);
+	background-color: rgb(92, 101, 101);
+}
+QPushButton::hover
+{
+	border:5px;
+}
+QPushButton::pressed
+{
+	border:-5px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnr3">
+    <property name="geometry">
+     <rect>
+      <x>1280</x>
+      <y>570</y>
+      <width>91</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	border-image: url(:/Images/Images/rsoftkey.png);
+	background-color: rgb(92, 101, 101);
+}
+QPushButton::hover
+{
+	border:5px;
+}
+QPushButton::pressed
+{
+	border:-5px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnr2">
+    <property name="geometry">
+     <rect>
+      <x>1280</x>
+      <y>430</y>
+      <width>91</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	border-image: url(:/Images/Images/rsoftkey.png);
+	background-color: rgb(92, 101, 101);
+}
+QPushButton::hover
+{
+	border:5px;
+}
+QPushButton::pressed
+{
+	border:-5px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnr1">
+    <property name="geometry">
+     <rect>
+      <x>1280</x>
+      <y>290</y>
+      <width>91</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	border-image: url(:/Images/Images/rsoftkey.png);
+	background-color: rgb(92, 101, 101);
+}
+QPushButton::hover
+{
+	border:5px;
+}
+QPushButton::pressed
+{
+	border:-5px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnr4">
+    <property name="geometry">
+     <rect>
+      <x>1280</x>
+      <y>680</y>
+      <width>91</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	border-image: url(:/Images/Images/rsoftkey.png);
+	background-color: rgb(92, 101, 101);
+}
+QPushButton::hover
+{
+	border:5px;
+}
+QPushButton::pressed
+{
+	border:-5px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btncard">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>211</width>
+      <height>290</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/Images/Images/InsertCard.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>btnl1</zorder>
+   <zorder>btnl2</zorder>
+   <zorder>btnl3</zorder>
+   <zorder>btnl4</zorder>
+   <zorder>btnr3</zorder>
+   <zorder>btnr2</zorder>
+   <zorder>btnr4</zorder>
+   <zorder>btnr1</zorder>
+   <zorder>label</zorder>
+   <zorder>btncard</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="MyResources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
