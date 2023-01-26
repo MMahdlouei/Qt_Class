@@ -16,6 +16,10 @@ class MainWindow(QMainWindow):
         super().__init__(parent)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
+        self.ui.btnrun.clicked.connect(self.Run)
+        
+    def Run(self):
+        self.ui.tabWidget.setCurrentIndex(self.ui.tabWidget.indexOf(self.ui.tab_2))
 
 
 if __name__ == "__main__":
