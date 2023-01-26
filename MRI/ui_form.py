@@ -52,21 +52,19 @@ class Ui_MainWindow(object):
 "\n"
 "\n"
 "}\n"
-"QTabBar::tab:hover {\n"
-"	background-color: qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgba(107, 107, 107, 255), stop:1 rgba(157, 157, 157, 255));\n"
-"}\n"
+"\n"
 "QTabBar::tab:!selected {\n"
 "    	margin-top: 1px;\n"
 "		margin-right: 1px;\n"
-"		background-color: qlineargradient(spread:pad, x1:"
-                        "0, y1:0, x2:1, y2:1, stop:0 rgba(78,78, 78, 255), stop:1 rgba(71, 71, 71, 255));\n"
+"		background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(78,78, 78, 255), stop:1 rgba(71, 71, 71, 255));\n"
 "}\n"
 "\n"
 "QWidget\n"
 "{\n"
 "	font: 75 11pt \"Tahoma\";\n"
 "	color: rgb(0, 0, 0);\n"
-"	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0 rgba(139, 139, 139, 255), stop:1 rgba(255, 255, 255, 255));\n"
+"	"
+                        "background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0 rgba(139, 139, 139, 255), stop:1 rgba(255, 255, 255, 255));\n"
 "\n"
 "}\n"
 "\n"
@@ -87,9 +85,9 @@ class Ui_MainWindow(object):
 "	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0 rgba(109, 109, 109, 255), stop:1 rgba(255, 255, 255, 255));\n"
 "}\n"
 "QPushButton:disabled{\n"
-"	border-t"
-                        "op-color: qlineargradient(spread:pad, x1:0.5, y1:0.6, x2:0.5, y2:0.4, stop:0 rgba(115, 115, 115, 255), stop:1 rgba(62, 62, 62, 255));\n"
-"	border-right-color: qlineargradient(spread:pad, x1:0.4, y1:0.5, x2:0.6, y2:0.5, stop:0 rgba(115, 115, 115, 255), stop:1 rgba(62, 62, 62, 255));\n"
+"	border-top-color: qlineargradient(spread:pad, x1:0.5, y1:0.6, x2:0.5, y2:0.4, stop:0 rgba(115, 115, 115, 255), stop:1 rgba(62, 62, 62, 255));\n"
+"	border-right-color: qlineargradie"
+                        "nt(spread:pad, x1:0.4, y1:0.5, x2:0.6, y2:0.5, stop:0 rgba(115, 115, 115, 255), stop:1 rgba(62, 62, 62, 255));\n"
 "	border-left-color: qlineargradient(spread:pad, x1:0.6, y1:0.5, x2:0.4, y2:0.5, stop:0 rgba(115, 115, 115, 255), stop:1 rgba(62, 62, 62, 255));\n"
 "	border-bottom-color: rgb(58, 58, 58);\n"
 "	color: rgb(0, 0, 0);\n"
@@ -110,8 +108,7 @@ class Ui_MainWindow(object):
 "	color: rgb(129, 129, 129);\n"
 "}\n"
 "QLabel {\n"
-""
-                        "	border:none;\n"
+"	border:none;\n"
 "	background-color: transparent;\n"
 "\n"
 "}\n"
@@ -122,7 +119,8 @@ class Ui_MainWindow(object):
 "QMenuBar {\n"
 "	font: 9pt \"Tahoma\";\n"
 "}\n"
-"QMenuBar::item {\n"
+""
+                        "QMenuBar::item {\n"
 "	spacing: 3px;\n"
 "	padding: 1px 4px;\n"
 "	background: transparent;\n"
@@ -143,10 +141,10 @@ class Ui_MainWindow(object):
 "	background:qlineargradient(spread:pad, x1:0.5, y1:0.7, x2:0.5, y2:0.3, stop:0 rgba(87, 97, 106, 255), stop:1 rgba(93, 103, 113, 255));\n"
 "	border-top-color: qlineargradient(spread:pad, x1:0.5, y1:0.6, x2:0.5, y2:0.4, stop:0 rgba(115, 115, 115, 255), stop:1 rgba(62, 62, 62, 255));\n"
 "	border-right-color: qlineargradient(spread:pad, x1:0.4, y1:0.5, x2:0.6, y2:0.5, stop:0 rgba(115, 115, 115, 255), stop:1 rgba(62, 62, 62, 255));\n"
-"	border-left-c"
-                        "olor: qlineargradient(spread:pad, x1:0.6, y1:0.5, x2:0.4, y2:0.5, stop:0 rgba(115, 115, 115, 255), stop:1 rgba(62, 62, 62, 255));\n"
+"	border-left-color: qlineargradient(spread:pad, x1:0.6, y1:0.5, x2:0.4, y2:0.5, stop:0 rgba(115, 115, 115, 255), stop:1 rgba(62, 62, 62, 255));\n"
 "	border-bottom-color: rgb(58, 58, 58);\n"
-"	border-bottom-width: 1px;\n"
+""
+                        "	border-bottom-width: 1px;\n"
 "}\n"
 "QMenu::item {\n"
 "	background-color:rgb(78,78,78);\n"
@@ -182,8 +180,7 @@ class Ui_MainWindow(object):
 "}\n"
 "QCheckBox::indicator:unchecked {\n"
 "	border-radius:4px;\n"
-""
-                        "	border-style:solid;\n"
+"	border-style:solid;\n"
 "	border-width:1px;\n"
 "	border-color: rgb(87, 97, 106);\n"
 "	background-color: rgb(255, 255, 255);\n"
@@ -191,7 +188,8 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QSlider{\n"
-"	border-style: outset;\n"
+"	border-style: o"
+                        "utset;\n"
 "	border-left-color: rgb(130, 130, 130);\n"
 "	border-top-color: rgb(136, 136, 136);\n"
 "	border-right-color: rgb(107, 107, 107);\n"
@@ -218,14 +216,14 @@ class Ui_MainWindow(object):
 "	background-color: rgb(98, 98, 98);\n"
 "	border-width: 0px;\n"
 "\n"
-""
-                        "    margin: 8px 2px;\n"
+"    margin: 8px 2px;\n"
 "}\n"
 "QSlider::handle {\n"
 "	border-style: outset;\n"
 "	border-left-color: rgb(170, 170, 170);\n"
 "	border-top-color: rgb(170, 170, 170);\n"
-"	border-right-color: rgb(50, 50, 50);\n"
+"	borde"
+                        "r-right-color: rgb(50, 50, 50);\n"
 "	border-bottom-color: rgb(50, 50, 50);\n"
 "    \n"
 "	background-color: rgb(255, 141, 0);\n"
@@ -243,12 +241,12 @@ class Ui_MainWindow(object):
 "	border-bottom-color: rgb(58, 58, 58);\n"
 "	border-bottom-width: 1px;\n"
 "	color: rgb(0, 0, 0);\n"
-"	background-color: qlineargradient(spr"
-                        "ead:pad, x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgba(57, 57, 57, 255), stop:1 rgba(77, 77, 77, 255));\n"
+"	background-color: qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgba(57, 57, 57, 255), stop:1 rgba(77, 77, 77, 255));\n"
 "}\n"
 "\n"
 "QSlider::handle:disabled{\n"
-"	background-color: rgb(59, 48, 48);\n"
+"	background-color: rgb(59, 48,"
+                        " 48);\n"
 "}\n"
 "\n"
 "QFrame, QSpinBox\n"
@@ -290,8 +288,7 @@ class Ui_MainWindow(object):
 "QSpinBox::up-button:hover, ::down-button:hover{\n"
 "	border-width: 0;\n"
 "}\n"
-"QSpinBox::up-button:pressed, ::down"
-                        "-button:pressed{\n"
+"QSpinBox::up-button:pressed, ::down-button:pressed{\n"
 "	border-width: 2;\n"
 "}\n"
 "\n"
@@ -302,7 +299,8 @@ class Ui_MainWindow(object):
 "\n"
 "\n"
 "QComboBox::drop-down {\n"
-"width : 11px;\n"
+""
+                        "width : 11px;\n"
 "height:11px;\n"
 "	border-image: url(:/Images/Images/Down.png);\n"
 "border-width:5px;\n"
@@ -351,7 +349,7 @@ class Ui_MainWindow(object):
         sizePolicy.setHeightForWidth(self.tabWidget.sizePolicy().hasHeightForWidth())
         self.tabWidget.setSizePolicy(sizePolicy)
         self.tabWidget.setLayoutDirection(Qt.LeftToRight)
-        self.tabWidget.setAutoFillBackground(True)
+        self.tabWidget.setAutoFillBackground(False)
         self.tabWidget.setStyleSheet(u"")
         self.tab = QWidget()
         self.tab.setObjectName(u"tab")
@@ -1332,12 +1330,12 @@ class Ui_MainWindow(object):
         self.label_56.setText(QCoreApplication.translate("MainWindow", u"Working directory", None))
         self.pushButton_8.setText(QCoreApplication.translate("MainWindow", u"Browse", None))
         self.btnrun.setText(QCoreApplication.translate("MainWindow", u"Run", None))
-        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
-        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
-        self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
-        self.pushButton_5.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
-        self.pushButton_6.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
-        self.pushButton_7.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
+        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Stop", None))
+        self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Load", None))
+        self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"Close", None))
+        self.pushButton_5.setText("")
+        self.pushButton_6.setText("")
+        self.pushButton_7.setText("")
         self.label_32.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.label_46.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.label_39.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
@@ -1355,14 +1353,14 @@ class Ui_MainWindow(object):
         self.label_44.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.label_53.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.label_43.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.checkBox_2.setText(QCoreApplication.translate("MainWindow", u"CheckBox", None))
+        self.checkBox_2.setText(QCoreApplication.translate("MainWindow", u"Real_Time Denoising", None))
         self.label_38.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.label_48.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.label_31.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.label_40.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.label_36.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.label_42.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.checkBox.setText(QCoreApplication.translate("MainWindow", u"CheckBox", None))
+        self.checkBox.setText(QCoreApplication.translate("MainWindow", u"Average", None))
         self.label_47.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.label_45.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.label_41.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
