@@ -1,7 +1,10 @@
 # This Python file uses the following encoding: utf-8
+from pickle import TRUE
 import sys
 import os
 
+from PySide2.QtCore import QTimer
+from random import randrange
 from PySide2.QtWidgets import QApplication, QMainWindow
 import pyqtgraph as pg
 import time, threading
@@ -20,56 +23,64 @@ class MainWindow(QMainWindow):
         super().__init__(parent)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
+        self.firsttime = True
         self.ui.btnrun.clicked.connect(self.Run)
         self.flag=True
         self.j=0
+        self.timer = QTimer()
+        self.timer.timeout.connect(self.plott)
+        #self.ui.pushButton_2.clicked.connect(self.timer.stop)
+        self.ui.tabWidget.currentChanged.connect(self.TabChanged)
+   
+        
 
         # circular buffer for storing serial data until it is
         # fetched by the GUI
         self.j=0
         self.sps = 0.0              # holds the average sample acquisition rate
-        self.exitFlag = False
-        self.exitMutex = threading.Lock()
-        self.dataMutex = threading.Lock()
+
         # self.plot([1,2,3,4,5,6,7,8,9,10], [30,32,34,32,33,31,29,32,35,45])
         
-        
-    def plott(self, hour,  temperature):
-        global thread
+    def TabChanged(self, index):
+        if(index == self.ui.tabWidget.indexOf(self.ui.tab)):
+            self.timer.stop()
+            print("tab1")
+        elif(index == self.ui.tabWidget.indexOf(self.ui.tab_2)):
+            self.timer.start(20)
+            print("tab2")
 
-        while True:
+    def plott(self):
+        
+        if True:
             # see whether an exit was requested
-            with self.exitMutex:
-                if self.exitFlag:
-                    break
             self.j=self.j+1
             hour=[1, 2, 3, 4]      
-            temperature=[1, 2, 3, self.j+1]
-   
+            temperature=[1, 2, 3, randrange(10)] 
+
             # self.ui.graphWidget.plot(hour, temperature)
-            self.ui.graphWidget.plot(hour, temperature)
+
+            if(self.firsttime) :
+                self.plotItem =self.ui.graphWidget.plot(hour, temperature)
+                self.firsttime = False
+
+            else:
+                self.plotItem.setData(hour, temperature)
+                print("amjikh")
+
             # self.ui.graphWidget_2.plot(hour, temperature)
             # self.ui.graphWidget_3.plot(hour, temperature)
-
-            if self.j>100:
-                thread.exit()
- 
+          
 
 
 
     def Run(self):
-        global thread
         self.ui.tabWidget.setCurrentIndex(self.ui.tabWidget.indexOf(self.ui.tab_2)) 
         hour=[1,2,3,4,5,6,7,8,9,10]     
         temperature=[30,32,34,32,33,31,29,32,35,45]
 
-        exitMutex = self.exitMutex
-        dataMutex = self.dataMutex
-        count = 0
-        sps = None
-        lastUpdate = time.time()
-        thread = threading.Thread(target=self.plott, args=(hour,temperature,))
-        thread.start()
+  #      thread = threading.Thread(target=self.plott, args=(hour,temperature,))
+ #       thread.start()
+        #self.timer.start(20)
        
 
     def exit(self):

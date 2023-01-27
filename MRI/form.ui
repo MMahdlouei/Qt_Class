@@ -511,7 +511,7 @@ border-radius:13px;
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_2">
+            <widget class="QPushButton" name="btnstop">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
                <horstretch>0</horstretch>
@@ -2132,5 +2132,22 @@ font: 700 18pt &quot;Tahoma&quot;;</string>
   </customwidget>
  </customwidgets>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>tabWidget</sender>
+   <signal>currentChanged(int)</signal>
+   <receiver>btnstop</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>420</x>
+     <y>232</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>764</x>
+     <y>121</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

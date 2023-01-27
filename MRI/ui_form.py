@@ -400,13 +400,13 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addWidget(self.btnrun)
 
-        self.pushButton_2 = QPushButton(self.frame_3)
-        self.pushButton_2.setObjectName(u"pushButton_2")
-        sizePolicy1.setHeightForWidth(self.pushButton_2.sizePolicy().hasHeightForWidth())
-        self.pushButton_2.setSizePolicy(sizePolicy1)
-        self.pushButton_2.setCursor(QCursor(Qt.PointingHandCursor))
+        self.btnstop = QPushButton(self.frame_3)
+        self.btnstop.setObjectName(u"btnstop")
+        sizePolicy1.setHeightForWidth(self.btnstop.sizePolicy().hasHeightForWidth())
+        self.btnstop.setSizePolicy(sizePolicy1)
+        self.btnstop.setCursor(QCursor(Qt.PointingHandCursor))
 
-        self.verticalLayout.addWidget(self.pushButton_2)
+        self.verticalLayout.addWidget(self.btnstop)
 
         self.pushButton_3 = QPushButton(self.frame_3)
         self.pushButton_3.setObjectName(u"pushButton_3")
@@ -1364,6 +1364,7 @@ class Ui_MainWindow(object):
         self.menuFile.addAction(self.actionExit)
 
         self.retranslateUi(MainWindow)
+        self.tabWidget.currentChanged.connect(self.btnstop.click)
 
         self.tabWidget.setCurrentIndex(0)
 
@@ -1375,7 +1376,7 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.actionExit.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
         self.btnrun.setText(QCoreApplication.translate("MainWindow", u"Run", None))
-        self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Stop", None))
+        self.btnstop.setText(QCoreApplication.translate("MainWindow", u"Stop", None))
         self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Load", None))
         self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"Close", None))
         self.pushButton_5.setText("")
