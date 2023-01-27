@@ -12,6 +12,8 @@ from PySide2.QtCore import *
 from PySide2.QtGui import *
 from PySide2.QtWidgets import *
 
+from pyqtgraph import PlotWidget
+
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -353,8 +355,8 @@ class Ui_MainWindow(object):
         self.tabWidget.setStyleSheet(u"")
         self.tab = QWidget()
         self.tab.setObjectName(u"tab")
-        self.tab.setMinimumSize(QSize(823, 384))
-        self.tab.setMaximumSize(QSize(823, 384))
+        self.tab.setMinimumSize(QSize(0, 0))
+        self.tab.setMaximumSize(QSize(16777215, 16777215))
         self.tab.setStyleSheet(u"QFrame\n"
 "{\n"
 "border-radius:13px;\n"
@@ -363,113 +365,27 @@ class Ui_MainWindow(object):
         self.gridLayout_3.setSpacing(2)
         self.gridLayout_3.setObjectName(u"gridLayout_3")
         self.gridLayout_3.setContentsMargins(2, 2, 2, 2)
-        self.frame_2 = QFrame(self.tab)
-        self.frame_2.setObjectName(u"frame_2")
-        self.frame_2.setStyleSheet(u"")
-        self.frame_2.setFrameShape(QFrame.StyledPanel)
-        self.frame_2.setFrameShadow(QFrame.Raised)
-        self.gridLayout_5 = QGridLayout(self.frame_2)
-        self.gridLayout_5.setSpacing(2)
-        self.gridLayout_5.setObjectName(u"gridLayout_5")
-        self.gridLayout_5.setContentsMargins(2, 2, 2, 2)
-        self.frame_52 = QFrame(self.frame_2)
-        self.frame_52.setObjectName(u"frame_52")
-        self.frame_52.setStyleSheet(u"QLabel\n"
-"{\n"
-"border:none;\n"
-"}\n"
-"QFrame\n"
-"{\n"
-"	border-width:0px;\n"
-"	background-color: transparent;\n"
-"}\n"
-"\n"
-"\n"
-"")
-        self.horizontalLayout_57 = QHBoxLayout(self.frame_52)
-        self.horizontalLayout_57.setSpacing(2)
-        self.horizontalLayout_57.setObjectName(u"horizontalLayout_57")
-        self.horizontalLayout_57.setContentsMargins(2, 2, 2, 2)
-        self.label_57 = QLabel(self.frame_52)
-        self.label_57.setObjectName(u"label_57")
-        self.label_57.setStyleSheet(u"border:none;")
+        self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
-        self.horizontalLayout_57.addWidget(self.label_57)
+        self.gridLayout_3.addItem(self.horizontalSpacer, 1, 0, 1, 1)
 
-        self.lineEdit_57 = QLineEdit(self.frame_52)
-        self.lineEdit_57.setObjectName(u"lineEdit_57")
+        self.horizontalSpacer_2 = QSpacerItem(40, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
-        self.horizontalLayout_57.addWidget(self.lineEdit_57)
+        self.gridLayout_3.addItem(self.horizontalSpacer_2, 1, 3, 1, 1)
 
+        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
 
-        self.gridLayout_5.addWidget(self.frame_52, 2, 0, 1, 1)
-
-        self.label_2 = QLabel(self.frame_2)
-        self.label_2.setObjectName(u"label_2")
-        self.label_2.setStyleSheet(u"border:none;\n"
-"font: 700 12pt \"Tahoma\";")
-        self.label_2.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
-
-        self.gridLayout_5.addWidget(self.label_2, 0, 0, 1, 1)
-
-        self.frame_51 = QFrame(self.frame_2)
-        self.frame_51.setObjectName(u"frame_51")
-        sizePolicy1 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Minimum)
-        sizePolicy1.setHorizontalStretch(0)
-        sizePolicy1.setVerticalStretch(0)
-        sizePolicy1.setHeightForWidth(self.frame_51.sizePolicy().hasHeightForWidth())
-        self.frame_51.setSizePolicy(sizePolicy1)
-        self.frame_51.setStyleSheet(u"QLabel\n"
-"{\n"
-"border:none;\n"
-"}\n"
-"QFrame\n"
-"{\n"
-"	border-width:0px;\n"
-"	background-color: transparent;\n"
-"}\n"
-"\n"
-"\n"
-"")
-        self.horizontalLayout_56 = QHBoxLayout(self.frame_51)
-        self.horizontalLayout_56.setSpacing(2)
-        self.horizontalLayout_56.setObjectName(u"horizontalLayout_56")
-        self.horizontalLayout_56.setContentsMargins(2, 2, 2, 2)
-        self.label_56 = QLabel(self.frame_51)
-        self.label_56.setObjectName(u"label_56")
-        sizePolicy1.setHeightForWidth(self.label_56.sizePolicy().hasHeightForWidth())
-        self.label_56.setSizePolicy(sizePolicy1)
-        self.label_56.setStyleSheet(u"border:none;")
-
-        self.horizontalLayout_56.addWidget(self.label_56)
-
-        self.lineEdit_56 = QLineEdit(self.frame_51)
-        self.lineEdit_56.setObjectName(u"lineEdit_56")
-        sizePolicy2 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Maximum)
-        sizePolicy2.setHorizontalStretch(0)
-        sizePolicy2.setVerticalStretch(0)
-        sizePolicy2.setHeightForWidth(self.lineEdit_56.sizePolicy().hasHeightForWidth())
-        self.lineEdit_56.setSizePolicy(sizePolicy2)
-
-        self.horizontalLayout_56.addWidget(self.lineEdit_56)
-
-        self.pushButton_8 = QPushButton(self.frame_51)
-        self.pushButton_8.setObjectName(u"pushButton_8")
-        self.pushButton_8.setStyleSheet(u"border-radius:10px;")
-
-        self.horizontalLayout_56.addWidget(self.pushButton_8)
-
-        self.horizontalLayout_56.setStretch(0, 1)
-        self.horizontalLayout_56.setStretch(1, 10)
-        self.horizontalLayout_56.setStretch(2, 2)
-
-        self.gridLayout_5.addWidget(self.frame_51, 1, 0, 1, 1)
-
-
-        self.gridLayout_3.addWidget(self.frame_2, 1, 0, 1, 2)
+        self.gridLayout_3.addItem(self.verticalSpacer, 3, 1, 1, 1)
 
         self.frame_3 = QFrame(self.tab)
         self.frame_3.setObjectName(u"frame_3")
+        sizePolicy1 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Minimum)
+        sizePolicy1.setHorizontalStretch(0)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.frame_3.sizePolicy().hasHeightForWidth())
+        self.frame_3.setSizePolicy(sizePolicy1)
+        self.frame_3.setMinimumSize(QSize(130, 0))
+        self.frame_3.setMaximumSize(QSize(130, 292))
         self.frame_3.setFrameShape(QFrame.StyledPanel)
         self.frame_3.setFrameShadow(QFrame.Raised)
         self.verticalLayout = QVBoxLayout(self.frame_3)
@@ -533,10 +449,118 @@ class Ui_MainWindow(object):
         self.verticalLayout.addWidget(self.pushButton_7)
 
 
-        self.gridLayout_3.addWidget(self.frame_3, 0, 1, 1, 1)
+        self.gridLayout_3.addWidget(self.frame_3, 1, 2, 1, 1)
+
+        self.frame_2 = QFrame(self.tab)
+        self.frame_2.setObjectName(u"frame_2")
+        sizePolicy1.setHeightForWidth(self.frame_2.sizePolicy().hasHeightForWidth())
+        self.frame_2.setSizePolicy(sizePolicy1)
+        self.frame_2.setMaximumSize(QSize(819, 86))
+        self.frame_2.setStyleSheet(u"")
+        self.frame_2.setFrameShape(QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QFrame.Raised)
+        self.gridLayout_5 = QGridLayout(self.frame_2)
+        self.gridLayout_5.setSpacing(2)
+        self.gridLayout_5.setObjectName(u"gridLayout_5")
+        self.gridLayout_5.setContentsMargins(2, 2, 2, 2)
+        self.frame_52 = QFrame(self.frame_2)
+        self.frame_52.setObjectName(u"frame_52")
+        self.frame_52.setStyleSheet(u"QLabel\n"
+"{\n"
+"border:none;\n"
+"}\n"
+"QFrame\n"
+"{\n"
+"	border-width:0px;\n"
+"	background-color: transparent;\n"
+"}\n"
+"\n"
+"\n"
+"")
+        self.horizontalLayout_57 = QHBoxLayout(self.frame_52)
+        self.horizontalLayout_57.setSpacing(2)
+        self.horizontalLayout_57.setObjectName(u"horizontalLayout_57")
+        self.horizontalLayout_57.setContentsMargins(2, 2, 2, 2)
+        self.label_57 = QLabel(self.frame_52)
+        self.label_57.setObjectName(u"label_57")
+        self.label_57.setStyleSheet(u"border:none;")
+
+        self.horizontalLayout_57.addWidget(self.label_57)
+
+        self.lineEdit_57 = QLineEdit(self.frame_52)
+        self.lineEdit_57.setObjectName(u"lineEdit_57")
+
+        self.horizontalLayout_57.addWidget(self.lineEdit_57)
+
+
+        self.gridLayout_5.addWidget(self.frame_52, 2, 0, 1, 1)
+
+        self.label_2 = QLabel(self.frame_2)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setStyleSheet(u"border:none;\n"
+"font: 700 12pt \"Tahoma\";")
+        self.label_2.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
+
+        self.gridLayout_5.addWidget(self.label_2, 0, 0, 1, 1)
+
+        self.frame_51 = QFrame(self.frame_2)
+        self.frame_51.setObjectName(u"frame_51")
+        sizePolicy1.setHeightForWidth(self.frame_51.sizePolicy().hasHeightForWidth())
+        self.frame_51.setSizePolicy(sizePolicy1)
+        self.frame_51.setStyleSheet(u"QLabel\n"
+"{\n"
+"border:none;\n"
+"}\n"
+"QFrame\n"
+"{\n"
+"	border-width:0px;\n"
+"	background-color: transparent;\n"
+"}\n"
+"\n"
+"\n"
+"")
+        self.horizontalLayout_56 = QHBoxLayout(self.frame_51)
+        self.horizontalLayout_56.setSpacing(2)
+        self.horizontalLayout_56.setObjectName(u"horizontalLayout_56")
+        self.horizontalLayout_56.setContentsMargins(2, 2, 2, 2)
+        self.label_56 = QLabel(self.frame_51)
+        self.label_56.setObjectName(u"label_56")
+        sizePolicy1.setHeightForWidth(self.label_56.sizePolicy().hasHeightForWidth())
+        self.label_56.setSizePolicy(sizePolicy1)
+        self.label_56.setStyleSheet(u"border:none;")
+
+        self.horizontalLayout_56.addWidget(self.label_56)
+
+        self.lineEdit_56 = QLineEdit(self.frame_51)
+        self.lineEdit_56.setObjectName(u"lineEdit_56")
+        sizePolicy2 = QSizePolicy(QSizePolicy.Minimum, QSizePolicy.Maximum)
+        sizePolicy2.setHorizontalStretch(0)
+        sizePolicy2.setVerticalStretch(0)
+        sizePolicy2.setHeightForWidth(self.lineEdit_56.sizePolicy().hasHeightForWidth())
+        self.lineEdit_56.setSizePolicy(sizePolicy2)
+
+        self.horizontalLayout_56.addWidget(self.lineEdit_56)
+
+        self.pushButton_8 = QPushButton(self.frame_51)
+        self.pushButton_8.setObjectName(u"pushButton_8")
+        self.pushButton_8.setStyleSheet(u"border-radius:10px;")
+
+        self.horizontalLayout_56.addWidget(self.pushButton_8)
+
+        self.horizontalLayout_56.setStretch(0, 1)
+        self.horizontalLayout_56.setStretch(1, 10)
+        self.horizontalLayout_56.setStretch(2, 2)
+
+        self.gridLayout_5.addWidget(self.frame_51, 1, 0, 1, 1)
+
+
+        self.gridLayout_3.addWidget(self.frame_2, 2, 1, 1, 2)
 
         self.frame = QFrame(self.tab)
         self.frame.setObjectName(u"frame")
+        sizePolicy1.setHeightForWidth(self.frame.sizePolicy().hasHeightForWidth())
+        self.frame.setSizePolicy(sizePolicy1)
+        self.frame.setMaximumSize(QSize(687, 292))
         self.frame.setStyleSheet(u"")
         self.frame.setFrameShape(QFrame.StyledPanel)
         self.frame.setFrameShadow(QFrame.Raised)
@@ -1261,12 +1285,16 @@ class Ui_MainWindow(object):
         self.gridLayout.setRowStretch(0, 1)
         self.gridLayout.setColumnStretch(0, 1)
 
-        self.gridLayout_3.addWidget(self.frame, 0, 0, 1, 1)
+        self.gridLayout_3.addWidget(self.frame, 1, 1, 1, 1)
 
-        self.gridLayout_3.setRowStretch(0, 4)
-        self.gridLayout_3.setRowStretch(1, 1)
-        self.gridLayout_3.setColumnStretch(0, 4)
-        self.gridLayout_3.setColumnStretch(1, 1)
+        self.verticalSpacer_2 = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.gridLayout_3.addItem(self.verticalSpacer_2, 0, 1, 1, 1)
+
+        self.gridLayout_3.setRowStretch(1, 4)
+        self.gridLayout_3.setRowStretch(2, 1)
+        self.gridLayout_3.setColumnStretch(1, 4)
+        self.gridLayout_3.setColumnStretch(2, 1)
         self.tabWidget.addTab(self.tab, "")
         self.tab_2 = QWidget()
         self.tab_2.setObjectName(u"tab_2")
@@ -1279,6 +1307,13 @@ class Ui_MainWindow(object):
         self.frame_5.setObjectName(u"frame_5")
         self.frame_5.setFrameShape(QFrame.StyledPanel)
         self.frame_5.setFrameShadow(QFrame.Raised)
+        self.gridLayout_7 = QGridLayout(self.frame_5)
+        self.gridLayout_7.setObjectName(u"gridLayout_7")
+        self.graphWidget_2 = PlotWidget(self.frame_5)
+        self.graphWidget_2.setObjectName(u"graphWidget_2")
+
+        self.gridLayout_7.addWidget(self.graphWidget_2, 0, 0, 1, 1)
+
 
         self.gridLayout_4.addWidget(self.frame_5, 1, 0, 1, 1)
 
@@ -1286,6 +1321,13 @@ class Ui_MainWindow(object):
         self.frame_6.setObjectName(u"frame_6")
         self.frame_6.setFrameShape(QFrame.StyledPanel)
         self.frame_6.setFrameShadow(QFrame.Raised)
+        self.gridLayout_8 = QGridLayout(self.frame_6)
+        self.gridLayout_8.setObjectName(u"gridLayout_8")
+        self.graphWidget_3 = PlotWidget(self.frame_6)
+        self.graphWidget_3.setObjectName(u"graphWidget_3")
+
+        self.gridLayout_8.addWidget(self.graphWidget_3, 0, 0, 1, 1)
+
 
         self.gridLayout_4.addWidget(self.frame_6, 1, 1, 1, 1)
 
@@ -1293,6 +1335,13 @@ class Ui_MainWindow(object):
         self.frame_4.setObjectName(u"frame_4")
         self.frame_4.setFrameShape(QFrame.StyledPanel)
         self.frame_4.setFrameShadow(QFrame.Raised)
+        self.gridLayout_6 = QGridLayout(self.frame_4)
+        self.gridLayout_6.setObjectName(u"gridLayout_6")
+        self.graphWidget = PlotWidget(self.frame_4)
+        self.graphWidget.setObjectName(u"graphWidget")
+
+        self.gridLayout_6.addWidget(self.graphWidget, 0, 0, 1, 1)
+
 
         self.gridLayout_4.addWidget(self.frame_4, 0, 0, 1, 2)
 
@@ -1316,7 +1365,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.tabWidget.setCurrentIndex(0)
+        self.tabWidget.setCurrentIndex(1)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1325,10 +1374,6 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.actionExit.setText(QCoreApplication.translate("MainWindow", u"Exit", None))
-        self.label_57.setText(QCoreApplication.translate("MainWindow", u"Experiment name", None))
-        self.label_2.setText(QCoreApplication.translate("MainWindow", u" Output location", None))
-        self.label_56.setText(QCoreApplication.translate("MainWindow", u"Working directory", None))
-        self.pushButton_8.setText(QCoreApplication.translate("MainWindow", u"Browse", None))
         self.btnrun.setText(QCoreApplication.translate("MainWindow", u"Run", None))
         self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Stop", None))
         self.pushButton_3.setText(QCoreApplication.translate("MainWindow", u"Load", None))
@@ -1336,6 +1381,10 @@ class Ui_MainWindow(object):
         self.pushButton_5.setText("")
         self.pushButton_6.setText("")
         self.pushButton_7.setText("")
+        self.label_57.setText(QCoreApplication.translate("MainWindow", u"Experiment name", None))
+        self.label_2.setText(QCoreApplication.translate("MainWindow", u" Output location", None))
+        self.label_56.setText(QCoreApplication.translate("MainWindow", u"Working directory", None))
+        self.pushButton_8.setText(QCoreApplication.translate("MainWindow", u"Browse", None))
         self.label_32.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.label_46.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
         self.label_39.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
