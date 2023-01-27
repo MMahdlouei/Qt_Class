@@ -4,6 +4,7 @@ import os
 
 from PySide2.QtWidgets import QApplication, QMainWindow
 import pyqtgraph as pg
+import time, threading
 
 uiclass, baseclass = pg.Qt.loadUiType("form.ui")
 
@@ -20,15 +21,62 @@ class MainWindow(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.ui.btnrun.clicked.connect(self.Run)
-        self.plot([1,2,3,4,5,6,7,8,9,10], [30,32,34,32,33,31,29,32,35,45])
+        self.flag=True
+        self.j=0
 
-    def plot(self, hour, temperature):
-        self.ui.graphWidget.plot(hour, temperature)
-        self.ui.graphWidget_2.plot(hour, temperature)
-        self.ui.graphWidget_3.plot(hour, temperature)
+        # circular buffer for storing serial data until it is
+        # fetched by the GUI
+        self.j=0
+        self.sps = 0.0              # holds the average sample acquisition rate
+        self.exitFlag = False
+        self.exitMutex = threading.Lock()
+        self.dataMutex = threading.Lock()
+        # self.plot([1,2,3,4,5,6,7,8,9,10], [30,32,34,32,33,31,29,32,35,45])
         
+        
+    def plott(self, hour,  temperature):
+        global thread
+
+        while True:
+            # see whether an exit was requested
+            with self.exitMutex:
+                if self.exitFlag:
+                    break
+            self.j=self.j+1
+            hour=[1, 2, 3, 4]      
+            temperature=[1, 2, 3, self.j+1]
+   
+            # self.ui.graphWidget.plot(hour, temperature)
+            self.ui.graphWidget.plot(hour, temperature)
+            # self.ui.graphWidget_2.plot(hour, temperature)
+            # self.ui.graphWidget_3.plot(hour, temperature)
+
+            if self.j>100:
+                thread.exit()
+ 
+
+
+
     def Run(self):
-        self.ui.tabWidget.setCurrentIndex(self.ui.tabWidget.indexOf(self.ui.tab_2))
+        global thread
+        self.ui.tabWidget.setCurrentIndex(self.ui.tabWidget.indexOf(self.ui.tab_2)) 
+        hour=[1,2,3,4,5,6,7,8,9,10]     
+        temperature=[30,32,34,32,33,31,29,32,35,45]
+
+        exitMutex = self.exitMutex
+        dataMutex = self.dataMutex
+        count = 0
+        sps = None
+        lastUpdate = time.time()
+        thread = threading.Thread(target=self.plott, args=(hour,temperature,))
+        thread.start()
+       
+
+    def exit(self):
+        """ Instruct the serial thread to exit."""
+        with self.exitMutex:
+            self.exitFlag = True        
+        
 
 
 if __name__ == "__main__":

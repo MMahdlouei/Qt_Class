@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>837</width>
-    <height>444</height>
+    <width>841</width>
+    <height>448</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -367,7 +367,7 @@ QTabWidget ::tab
        <string notr="true"/>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab">
        <property name="minimumSize">
@@ -2099,7 +2099,7 @@ font: 700 18pt &quot;Tahoma&quot;;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>837</width>
+     <width>841</width>
      <height>17</height>
     </rect>
    </property>
