@@ -41,10 +41,6 @@ class MainWindow(QMainWindow):
 
         # self.plot([1,2,3,4,5,6,7,8,9,10], [30,32,34,32,33,31,29,32,35,45])
         
-<<<<<<< HEAD
-        
-    def plott(self, hour,  temperature):
-=======
     def TabChanged(self, index):
         if(index == self.ui.tabWidget.indexOf(self.ui.tab)):
             self.timer.stop()
@@ -52,7 +48,6 @@ class MainWindow(QMainWindow):
         elif(index == self.ui.tabWidget.indexOf(self.ui.tab_2)):
             self.timer.start(20)
             print("tab2")
->>>>>>> master
 
     def plott(self):
         
@@ -75,12 +70,6 @@ class MainWindow(QMainWindow):
             # self.ui.graphWidget_2.plot(hour, temperature)
             # self.ui.graphWidget_3.plot(hour, temperature)
 
-<<<<<<< HEAD
-            if self.j>40:
-                self.exit()
- 
-=======
->>>>>>> master
 
 
 
@@ -89,19 +78,9 @@ class MainWindow(QMainWindow):
         hour=[1,2,3,4,5,6,7,8,9,10]     
         temperature=[30,32,34,32,33,31,29,32,35,45]
 
-<<<<<<< HEAD
-        exitMutex = self.exitMutex
-        dataMutex = self.dataMutex
-        count = 0
-        sps = None
-        # lastUpdate = time.time()
-        self.thread = threading.Thread(target=self.plott, args=(hour,temperature,))
-        self.thread.start()
-=======
   #      thread = threading.Thread(target=self.plott, args=(hour,temperature,))
  #       thread.start()
         #self.timer.start(20)
->>>>>>> master
        
 
     def exit(self):
