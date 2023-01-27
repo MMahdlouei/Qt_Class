@@ -4,7 +4,7 @@ import os
 
 from PySide2.QtWidgets import QApplication, QMainWindow
 import pyqtgraph as pg
-import time, threading
+import threading
 
 uiclass, baseclass = pg.Qt.loadUiType("form.ui")
 
@@ -35,7 +35,6 @@ class MainWindow(QMainWindow):
         
         
     def plott(self, hour,  temperature):
-        global thread
 
         while True:
             # see whether an exit was requested
@@ -52,13 +51,12 @@ class MainWindow(QMainWindow):
             # self.ui.graphWidget_3.plot(hour, temperature)
 
             if self.j>40:
-                exit()
+                self.exit()
  
 
 
 
     def Run(self):
-        global thread
         self.ui.tabWidget.setCurrentIndex(self.ui.tabWidget.indexOf(self.ui.tab_2)) 
         hour=[1,2,3,4,5,6,7,8,9,10]     
         temperature=[30,32,34,32,33,31,29,32,35,45]
@@ -67,9 +65,9 @@ class MainWindow(QMainWindow):
         dataMutex = self.dataMutex
         count = 0
         sps = None
-        lastUpdate = time.time()
-        thread = threading.Thread(target=self.plott, args=(hour,temperature,))
-        thread.start()
+        # lastUpdate = time.time()
+        self.thread = threading.Thread(target=self.plott, args=(hour,temperature,))
+        self.thread.start()
        
 
     def exit(self):
