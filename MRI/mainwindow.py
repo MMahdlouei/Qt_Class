@@ -51,8 +51,8 @@ class MainWindow(QMainWindow):
             # self.ui.graphWidget_2.plot(hour, temperature)
             # self.ui.graphWidget_3.plot(hour, temperature)
 
-            if self.j>100:
-                thread.exit()
+            if self.j>40:
+                exit()
  
 
 
