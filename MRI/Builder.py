@@ -2,6 +2,6 @@
 
 # if __name__ == "__main__":
 #     pass
-import os
+#import os
 
-os.system("pyinstaller -F --onefile --noconsole mainwindow.py")
+#os.system("pyinstaller -F --onefile --noconsole mainwindow.py")
