@@ -69,6 +69,9 @@ class MainWindow(QMainWindow):
 
             # self.ui.graphWidget_2.plot(hour, temperature)
             # self.ui.graphWidget_3.plot(hour, temperature)
+          
+
+
 
     def Run(self):
         self.ui.tabWidget.setCurrentIndex(self.ui.tabWidget.indexOf(self.ui.tab_2)) 
